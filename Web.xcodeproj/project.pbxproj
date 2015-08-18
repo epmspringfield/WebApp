@@ -168,6 +168,7 @@
 				TargetAttributes = {
 					56BFAFB01B82CE0200ED4E5B = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 2V8AEFFU8N;
 					};
 					56BFAFC91B82CE0200ED4E5B = {
 						CreatedOnToolsVersion = 6.2;
@@ -344,7 +345,8 @@
 		56BFAFD51B82CE0200ED4E5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Web/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,7 +356,8 @@
 		56BFAFD61B82CE0200ED4E5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				INFOPLIST_FILE = Web/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

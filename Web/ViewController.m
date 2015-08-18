@@ -1,6 +1,6 @@
 //
 //  ViewController.m
-//  Web
+//  SecureWebApplication
 //
 //  Created by EPM Springfield on 8/17/15.
 //  Copyright (c) 2015 EPM Springfield. All rights reserved.
@@ -16,7 +16,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *webSite = @"https://www.google.com";
+    NSURL *url = [NSURL URLWithString:webSite];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [webPage loadRequest:request];
+    
+}
+
+-(IBAction)goToWebSite:(id)sender {
+    
+    NSString *newWebsite = [NSString stringWithFormat:@"https://%@", addressBar.text];
+    
+    NSURL *url = [NSURL URLWithString:newWebsite];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
+    [webPage loadRequest:request];
+}
+
+-(IBAction)goBack:(id)sender {
+    
+    [webPage goBack];
+    
+}
+-(IBAction)goForward:(id)sender {
+    
+    [webPage goForward];
+    
+}
+-(IBAction)reload:(id)sender {
+    
+    [webPage reload];
+    
 }
 
 - (void)didReceiveMemoryWarning {
